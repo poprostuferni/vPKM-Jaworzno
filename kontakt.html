@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - vPKM Jaworzno</title>
+    <style>
+        :root {
+            --primary-color: #007A87; 
+            --dark-color: #1a1a1a;
+            --light-color: #f4f6f7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--light-color); color: var(--dark-color); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .container { text-align: center; max-width: 800px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        h1 { color: var(--primary-color); margin-bottom: 10px; }
+        p { color: #666; margin-bottom: 40px; }
+        .cards { display: flex; gap: 25px; justify-content: center; flex-wrap: wrap; }
+        .card { background: #fafbfc; border-radius: 12px; padding: 25px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); border-top: 5px solid #5865F2; }
+        .avatar { background: #eaeeef; width: 60px; height: 60px; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; }
+        h3 { margin-bottom: 5px; font-size: 1.25rem; }
+        .role { color: #5865F2; font-weight: bold; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
+        .btn-back { display: inline-block; margin-top: 40px; text-decoration: none; color: var(--primary-color); font-weight: bold; transition: opacity 0.3s; }
+        .btn-back:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kontakt z Administracją</h1>
+        <p>Dodaj nas do znajomych na Discordzie, aby dołączyć do firmy lub zgłosić uwagi!</p>
+        
+        <div class="cards">
+            <div class="card">
+                <div class="avatar">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="#5865F2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </div>
+                <h3>fernandeszo</h3>
+                <div class="role">Właściciel vPKM</div>
+            </div>
+
+            <div class="card">
+                <div class="avatar">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="#5865F2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </div>
+                <h3>_pitu37</h3>
+                <div class="role">Właściciel vPKM</div>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn-back">

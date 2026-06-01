@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O projekcie - vPKM Jaworzno</title>
+    <style>
+        :root {
+            --primary-color: #007A87; 
+            --secondary-color: #F9E100; 
+            --dark-color: #1a1a1a;
+            --light-color: #f4f6f7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--light-color); color: var(--dark-color); line-height: 1.8; }
+        
+        .hero-project {
+            background: linear-gradient(rgba(0, 122, 135, 0.85), rgba(26, 26, 26, 0.95)), url('image_d3c3bf.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero-project h1 { font-size: 3rem; margin-bottom: 15px; letter-spacing: 1px; }
+        .hero-project p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        
+        .container { max-width: 900px; margin: 50px auto; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        
+        h2 { color: var(--primary-color); margin: 40px 0 15px; font-size: 1.8rem; position: relative; padding-bottom: 5px; }
+        h2::after { content: ''; display: block; width: 60px; height: 4px; background: var(--secondary-color); margin-top: 8px; }
+        h2:first-of-type { margin-top: 0; }
+        
+        p { margin-bottom: 25px; color: #333; font-size: 1.1rem; text-align: justify; text-indent: 30px; }
+        
+        .quote-box { background: #f0f7f8; border-left: 5px solid var(--primary-color); padding: 20px; margin: 30px 0; border-radius: 0 12px 12px 0; font-style: italic; }
+        .quote-box p { text-indent: 0; margin-bottom: 0; color: #555; }
+        
+        .highlight { font-weight: bold; color: var(--primary-color); }
+        
+        .btn-back { display: inline-block; margin-top: 40px; text-decoration: none; color: white; background: var(--primary-color); padding: 12px 25px; border-radius: 8px; font-weight: bold; transition: background 0.3s; }
+        .btn-back:hover { background: #005a63; }
+    </style>
+</head>
+<body>
+
+    <header class="hero-project">
+        <h1>Manifest Projektu vPKM Jaworzno</h1>
+        <p>Obszerne kompendium wiedzy o naszej historii, pasji, planach i technicznych kulisach wirtualnego przewoźnika.</p>
+    </header>
+
+    <div class="container">
+        <h2>Początek wszystkiego: Dzień Otwarty Zajezdni</h2>
+        <p>Każdy wielki projekt w świecie symulacji ma swój punkt zwrotny, moment, w którym zwykłe granie zamienia się w chęć stworzenia czegoś trwałego i unikalnego. Dla nas tym momentem był <span class="highlight">dzień otwarty zajezdni PKM Jaworzno</span>. Przekraczając bramy bazy przy ulicy Krakowskiej, nie byliśmy tylko zwykłymi zwiedzającymi – chłonęliśmy każdy element otoczenia. Zapach nowoczesnej hali warsztatowej, widok potężnych stacji transformatorowych i rzędy morskich autobusów równo zaparkowanych na placu postojowym wywarły na nas piorunujące wrażenie.</p>
+        
+        <p>Kluczowym punktem wizyty była możliwość przyjrzenia się z bliska infrastrukturze szybkiego ładowania oraz unikalnym rozwiązaniom technicznym, z których Jaworzno słynie w całej Polsce jako pionier elektromobilności. Stojąc bezpośrednio pod potężnym masztem z ładowarką pantografową i obserwując, jak ramię automatycznie opada na dach elektrycznego Solarisa, zrozumieliśmy, że ten klimat po prostu musi zostać przeniesiony do symulatora OMSI 2. Żadne gotowe, fikcyjne mapy dostępne w sieci nie były w stanie oddać tej specyfiki, dlatego jedyną słuszną decyzją było wzięcie spraw w swoje ręce i rozpoczęcie prac nad własnym, wirtualnym odpowiednikiem.</p>
+
+        <div class="quote-box">
+            <p>"To nie była zwykła wycieczka. To była techniczna inspiracja, która uświadomiła nam, jak bardzo unikalną komunikację miejską posiada Jaworzno. Charakterystyczne malowanie łączące głęboki morski odcień z jaskrawymi, żółtymi pasami to coś, co wyróżnia to miasto w skali kraju. Postanowiliśmy, że wirtualni kierowcy muszą doświadczyć tego samego realizmu."</p>
+        </div>
+
+        <h2>Ambitny Cel: Ukończyć Każdą Linię vPKM Jaworzno</h2>
+        <p>Wielu twórców modyfikacji do OMSI 2 skupia się na pojedynczych fragmentach tras lub tworzy wersje fikcyjne, które tylko luźno nawiązują do rzeczywistości. Nasza wizja jest zupełnie inna i znacznie bardziej bezkompromisowa. Postawiliśmy przed sobą nadrzędny, długofalowy cel: <span class="highlight">odtworzenie i ukończenie w skali 1:1 każdej linii autobusowej obsługiwanej przez PKM Jaworzno</span>. Wiemy, jak ogromne jest to przedsięwzięcie – sieć połączeń w Jaworznie i okolicach (w tym kursy aglomeracyjne m.in. do Chrzanowa, Sosnowca czy Katowic) to setki kilometrów dróg, skomplikowane układy skrzyżowań oraz zróżnicowana charakterystyka topograficzna terenu.</p>
+        
+        <p>Projekt realizujemy etapami, dbając o każdy najmniejszy detal. Prace rozpoczynamy od precyzyjnego zbierania danych geodezyjnych, analizy filmów z perspektywy kabiny kierowcy (tzw. cabview) oraz wertowania oficjalnych rozkładów jazdy. Każda ulica, każda zatoczka autobusowa, a nawet charakterystyczne punkty orientacyjne, takie jak cmentarze, osiedla mieszkaniowe czy infrastruktura przemysłowa, są odwzorowywane z najwyższą możliwą dokładnością. Chcemy, aby gracz, który na co dzień podróżuje autobusami w Jaworznie, po uruchomieniu naszej mapy poczuł się dokładnie tak, jak w drodze do szkoły czy pracy.</p>
+
+        <h2>Wierność Taborowa i Technologia Elektromobilności</h2>
+        <p>Ukończenie siatki połączeń to tylko połowa sukcesu – równie ważny jest tabor. Jaworzno kojarzy się przede wszystkim z nowoczesnością i ekologią, dlatego fundamentem naszej wirtualnej floty są autobusy z napędem elektrycznym. Nasze prace skupiają się wokół precyzyjnego skonfigurowania modeli takich jak Solaris Urbino Electric w wersjach solo oraz przegubowych. Nie ograniczamy się wyłącznie do nałożenia tekstur malowania (choć i tutaj spędziliśmy dziesiątki godzin na idealnym dopasowaniu odcieni morskiego i żółtego oraz odwzorowaniu oryginalnych oznaczeń taborowych i piktogramów).</p>
+        
+        <p>Prawdziwym wyzwaniem, które realizujemy, jest skryptowanie zachowania pojazdów i dedykowanej infrastruktury. Pracujemy nad realistycznym odwzorowaniem zużycia energii z baterii, procesem rekuperacji (odzyskiwania energii podczas hamowania) oraz pełną funkcjonalnością tablic kierunkowych LED i wewnętrznych systemów informacji pasażerskiej zgodnych z realnymi sterownikami stosowanymi przez PKM. Dodatkowo, kluczowym elementem mapy są działające punkty szybkiego ładowania pantografowego na pętlach i punktach zwrotnych – gracz będzie musiał idealnie najechać pod maszt i odczekać wyznaczony czas na podładowanie baterii przed kursem powrotnym, dokładnie tak jak ma to miejsce w rzeczywistości.</p>
+
+        <h2>Projekt Tworzony z Pasji</h2>
+        <p>vPKM Jaworzno to projekt tworzony w pełni hobbystycznie, napędzany czystą pasją do symulacji i szacunkiem do realnego przewoźnika. Zdajemy sobie sprawę, że realizacja tak gigantycznego planu, jakim jest budowa kompletnej sieci linii, zajmie mnóstwo czasu i będzie wymagała ogromnej cierpliwości. Robimy to jednak dla społeczności OMSI 2, dla mieszkańców Jaworzna oraz dla samych siebie, by udowodnić, że przy odpowiednim zaparciu można stworzyć coś unikalnego. Dziękujemy każdemu za wsparcie, dobre słowo i śledzenie naszych postępów. Każdy screen z trasy, taki jak nocne kursy na linii 373 w kierunku Łubowiec Cmentarz Pętla, to mały krok milowy na drodze do wielkiego celu.</p>
+
+        <center>
+            <a href="strona.html" class="btn-back">← Powrót do strony głównej</a>
+        </center>
+    </div>
+
+</body>
+</html>
